@@ -12,6 +12,7 @@ menu = ['1. Открыть файл. ',
         '9. Main menu']
 
 def show_menu() -> None:
+    clear()
     for index, line in enumerate(menu):
         print(line + global_vars.menu_modifiers[index]) 
 
