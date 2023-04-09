@@ -154,15 +154,15 @@ def start():
                     if del_contact():
                         sleep_message("deleted")
                     else:
-                        sleep_message("Eroror in deleting")
+                        sleep_message("Error in deleting")
                     output.show_menu()
             case 8:
                 if(len(global_vars.base)!=0):
                     sleep_message("You didn't save the base")
-                    exit_progr = input("Exit without saving? (y, n)")
+                    exit_progr = input("Exit without saving? (y, n): ")
                     if exit_progr == 'y':
                         output.clear()
-                        sleep_message("Now exiting! Good bue!")
+                        sleep_message("Now exiting! Good bye!")
                         global_vars.loop = False
                     else:
                         output.show_menu()
@@ -170,7 +170,7 @@ def start():
                         
                 else:
                     output.clear()
-                    sleep_message("Now exiting! Good bue!")
+                    sleep_message("Now exiting! Good bye!")
                     global_vars.loop = False
             case 9:
                 sleep_message("go back to main menu")
