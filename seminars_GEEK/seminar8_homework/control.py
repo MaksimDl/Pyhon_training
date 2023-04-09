@@ -154,7 +154,7 @@ def start():
                     if del_contact():
                         sleep_message("deleted")
                     else:
-                        sleep_message("Error in deleting")
+                        sleep_message("Delete error")
                     output.show_menu()
             case 8:
                 if(len(global_vars.base)!=0):
