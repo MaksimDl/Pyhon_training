@@ -45,7 +45,7 @@ def new_search_contact()-> Contact:
     return Contact(name, phone, comment)
 
 
-def change_contact()-> dict:
+def change_contact() ->(int, Contact):
     print() 
     #choise = int(input(controller.txt.name_to_edit))  # check fo int?
     while True:
